@@ -1,0 +1,33 @@
+// A program demonstrating a member function of one class being a friend of another class, allowing access to private data.
+
+#include <iostream> 
+using namespace std; 
+class Area{ 
+ int length,breadth,area; 
+  
+ public: 
+ void getArea(int l,int b) 
+ { 
+ length=l; 
+ breadth=b; 
+ } 
+ void calcArea(){ 
+ area = length * breadth; 
+ } 
+ friend class printClass; 
+}; 
+class printClass{ 
+ public: 
+ void printArea(Area a){ 
+ cout<<"Area = "<<a.area; 
+ } 
+}; 
+int main(){ 
+ Area a; 
+ printClass p; 
+ a.getArea(10,5); 
+ a.calcArea(); 
+ p.printArea(a); 
+  
+ return 0; 
+}
