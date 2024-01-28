@@ -1,3 +1,5 @@
+// A C++ program demonstrating exception handling with multiple try-catch blocks for different types of exceptions.
+
 #include <iostream>
 using namespace std;
 
