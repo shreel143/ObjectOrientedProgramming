@@ -29,3 +29,11 @@ int main()
  cout<<"Second Number:"<<b<<endl;  
   
  swap_by_ref(a,b); 
+  
+ cout<<"\nValues of numbers after swapping in main function:"<<endl;  
+ cout<<"First Number:"<<a<<endl;  
+ cout<<"Second Number:"<<b<<endl;  
+  
+ return 0;  
+}  
+
