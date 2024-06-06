@@ -14,7 +14,7 @@ public:
         dim2 = b;
     }
 
-    virtual float area() = 0;
+    virtual float area() = 0; 
     virtual float perimeter() = 0;
 };
 
